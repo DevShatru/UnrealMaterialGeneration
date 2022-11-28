@@ -1,5 +1,5 @@
 ### **Asset Generation Scripts**
-Author: Shatrujit Aditya Kumar (pg22shatrujit@vfs.com)
+Author: Shatrujit Aditya Kumar (shatrujit95@gmail.com)
 Last Updated: 4th October 2022
 ----------
 
