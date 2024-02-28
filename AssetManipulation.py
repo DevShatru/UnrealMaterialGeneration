@@ -1,4 +1,4 @@
-# Copyright (C) Shatrujit Aditya Kumar 2022, All Rights Reserved
+# Copyright (C) Shatrujit Aditya Kumar 2024. All Rights Reserved.
 
 import unreal
 import os.path
@@ -20,6 +20,8 @@ PropertyMap = {
 SamplerMap = {
     Constants.Sampler.Normal: unreal.MaterialSamplerType.SAMPLERTYPE_NORMAL,
     Constants.Sampler.LinearColor: unreal.MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR,
+    Constants.Sampler.LinearGrayscale: unreal.MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE,
+    Constants.Sampler.Alpha: unreal.MaterialSamplerType.SAMPLERTYPE_ALPHA,
 }
 
 # Aliases for unreal classes
