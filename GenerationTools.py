@@ -1,4 +1,4 @@
-# Copyright (C) Shatrujit Aditya Kumar 2022, All Rights Reserved
+# Copyright (C) Shatrujit Aditya Kumar 2024. All Rights Reserved.
 
 import Constants
 import AssetManipulation
@@ -132,11 +132,13 @@ def generate_nodes( textureMap, material ):
             # Material Property for WPO isn't exposed to Python API
 
         elif texTypeLower == Constants.ROUGH_SUFFIX.lower():
-            node.sampler_type = AssetManipulation.get_sampler_from_map( Constants.Sampler.LinearColor )
+            print("Setting sample type to Grayscale")
+            node.sampler_type = AssetManipulation.get_sampler_from_map( Constants.Sampler.LinearGrayscale )
             AssetManipulation.set_node_property( node, "RGB", Constants.PropertyNode.Roughness )
         
         elif texTypeLower == Constants.AO_SUFFIX.lower():
-            node.sampler_type = AssetManipulation.get_sampler_from_map( Constants.Sampler.LinearColor )
+            print("Setting sample type to Alpha")
+            node.sampler_type = AssetManipulation.get_sampler_from_map( Constants.Sampler.Alpha )
             AssetManipulation.set_node_property( node, "RGB", Constants.PropertyNode.AO )
 
         iter += 1
