@@ -1,4 +1,4 @@
-# Copyright (C) Shatrujit Aditya Kumar 2022, All Rights Reserved 
+# Copyright (C) Shatrujit Aditya Kumar 2024. All Rights Reserved. 
 
 SCALE = 16 # Size of a grid square in the material graph
 
