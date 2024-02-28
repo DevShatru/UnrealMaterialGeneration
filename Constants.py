@@ -1,23 +1,22 @@
-# Copyright (C) Shatrujit Aditya Kumar 2022, All Rights Reserved
+# Copyright (C) Shatrujit Aditya Kumar 2024. All Rights Reserved.
 from enum import Enum
 
-# Asset library root, texture, and material directories
-ROOT = "/Game/"
-TEXTURES_LOCATION = ROOT + "Textures"
-MATERIALS_LOCATION = ROOT + "Materials"
-SHADER = ROOT + "Shaders/M_UberBaked"
+# Asset library texture, material directories & shader path
+TEXTURES_LOCATION = "/Game/Textures"
+MATERIALS_LOCATION = "/Game/Materials"
+SHADER = "/Game/Shaders/M_UberBaked"
 
 # Prefix to add to the created material/instance
 MATERIAL_INSTANCE_PREFIX = "MI_"
 MATERIAL_PREFIX = "M_"
 
 # Accepted suffixes on textures maps, plus an array to easily iterate through them
-BASE_SUFFIX = "BaseColor"
-NORMAL_SUFFIX = "Normal"
+BASE_SUFFIX = "_D"
+NORMAL_SUFFIX = "_N"
 PACKED_SUFFIX = "Packed"
 HEIGHT_SUFFIX = "Height"
-ROUGH_SUFFIX = "Roughness"
-AO_SUFFIX = "AmbientOcclusion"
+ROUGH_SUFFIX = "_R"
+AO_SUFFIX = "_AO"
 
 TEXTURES_SUFFIX = [ BASE_SUFFIX, NORMAL_SUFFIX, PACKED_SUFFIX, HEIGHT_SUFFIX, ROUGH_SUFFIX, AO_SUFFIX ]
 
@@ -50,3 +49,5 @@ class PropertyNode(Enum):
 class Sampler(Enum):
     Normal = 0,
     LinearColor = 1,
+    LinearGrayscale = 2,
+    Alpha = 3,
